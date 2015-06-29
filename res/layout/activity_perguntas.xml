@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/varBkg"
+    tools:context="br.ufpr.quiz.br.PerguntasActivity" >
+
+<ImageView
+        android1:id="@+id/img"
+        android1:layout_width="match_parent"
+        android1:layout_height="140dp"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true" />
+    
+    <TextView
+        android:id="@+id/txtQuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/nome"
+        />
+
+        <requestFocus />
+
+    <RadioGroup
+        android1:id="@+id/RadioOptions"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_centerVertical="true" >
+
+        <RadioButton
+            android1:id="@+id/radio0"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:text="A" />
+
+        <RadioButton
+            android1:id="@+id/radio1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="B" />
+
+        <RadioButton
+            android1:id="@+id/radio2"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="C" />
+
+        <RadioButton
+            android1:id="@+id/radio4"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="D" />
+
+        <RadioButton
+            android1:id="@+id/radio3"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="E" />
+    </RadioGroup>
+
+    <Button
+        android1:id="@+id/responder"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@+id/RadioOptions"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="50dp"
+        android1:text="Responder" />
+
+    <TextView
+        android1:id="@+id/txtOptions"
+        android1:layout_width="120dip"
+        android1:layout_height="80dip"
+        android1:layout_above="@+id/responder"
+        android1:layout_alignTop="@+id/RadioOptions"
+        android1:layout_marginLeft="24dp"
+        android1:layout_toRightOf="@+id/RadioOptions"
+        android1:textColor="#000000" />
+
+</RelativeLayout>
