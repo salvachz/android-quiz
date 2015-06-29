@@ -48,6 +48,7 @@ public class QuestionListThread extends Thread{
                         list[i] = jsonArray.getInt(i);
                     }
                     bundle.putIntArray("questions", list);
+                    bundle.putString("nome", this.user);
                     Message msg = new Message();
                     msg.setData(bundle);
                     Log.i("ha","run sending message");

@@ -34,6 +34,7 @@ public class PerguntasActivity extends Activity implements OnClickListener {
 	ImageView imagem;
 	int actual_position;
 	String resposta;
+	String nome;
 	RadioGroup RadioOptions;
 	Button responder;
 	int pontuacao;
@@ -72,6 +73,8 @@ private Handler handlerPergunta = new Handler(){
         this.txtOpcoes = (TextView) findViewById(R.id.txtOptions);
         this.RadioOptions = (RadioGroup) findViewById(R.id.RadioOptions);
         imagem = (ImageView) findViewById(R.id.img);
+        nome = extras.getString(("nome"));
+        Log.i("ha","nome vale:"+nome);
         this.actual_position = extras.getInt("position")+1;
         list_questions = extras.getIntArray("questions");
         responder = (Button) findViewById(R.id.responder);
@@ -94,13 +97,20 @@ private Handler handlerPergunta = new Handler(){
             	pontuacao =+1;
             }
             if(actual_position>=4){
-    			Toast.makeText(PerguntasActivity.this, "Acabou a brincadeira!", Toast.LENGTH_LONG).show();
+            	Message msg = new Message();
+	    		Bundle bundle = msg.getData();
+	    		bundle.putInt("pontuacao", pontuacao);
+	    		bundle.putString("nome", nome);
+            	Intent it = new Intent(this, ListaResultadosActivity.class);
+            	it.putExtras(bundle);
+                startActivity(it);
     		}
     		else{
     			Message msg = new Message();
 	    		Bundle bundle = msg.getData();
 	    		bundle.putInt("position", actual_position);
 	    		bundle.putInt("pontuacao", pontuacao);
+	    		bundle.putString("nome", nome);
 	    		bundle.putIntArray("questions", list_questions);
 	    		Log.i("ha","aqui na handleNextPergunta chega");
 	    		Intent it = new Intent(PerguntasActivity.this, PerguntasActivity.class);

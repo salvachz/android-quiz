@@ -1093,13 +1093,14 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
         public static final int action_mode_close_button=0x7f090024;
-        public static final int action_settings=0x7f090050;
+        public static final int action_settings=0x7f090053;
         public static final int activity_chooser_view_content=0x7f090025;
         public static final int always=0x7f09000f;
         public static final int beginning=0x7f090016;
         public static final int btnStart=0x7f09003f;
         public static final int checkbox=0x7f09002d;
         public static final int collapseActionView=0x7f090010;
+        public static final int datas=0x7f090051;
         public static final int default_activity_button=0x7f090028;
         public static final int dialog=0x7f090014;
         public static final int disableHome=0x7f090009;
@@ -1121,8 +1122,10 @@ containing a value of this type.
         public static final int middle=0x7f090018;
         public static final int never=0x7f090012;
         public static final int nome=0x7f09003c;
+        public static final int nomes=0x7f090050;
         public static final int none=0x7f090019;
         public static final int normal=0x7f090007;
+        public static final int notas=0x7f090052;
         public static final int preco=0x7f09003d;
         public static final int progress_circular=0x7f090004;
         public static final int progress_horizontal=0x7f090005;
@@ -1218,7 +1221,8 @@ containing a value of this type.
         public static final int activity_main=0x7f03001a;
         public static final int activity_perguntas=0x7f03001b;
         public static final int activity_result=0x7f03001c;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int list_item=0x7f03001d;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
     }
     public static final class menu {
         public static final int list_cell=0x7f0c0000;

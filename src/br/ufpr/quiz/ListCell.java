@@ -37,7 +37,7 @@ public class ListCell extends ArrayAdapter<Resultado> {
 		TextView txtNome= (TextView) rowView.findViewById(R.id.nome);
 		//ImageView imageView = (ImageView) rowView.findViewById(R.id.img);
 		TextView txtPreco = (TextView) rowView.findViewById(R.id.preco);
-		txtNome.setText(result.get(position).getNome());
+		//txtNome.setText(result.get(position).getNome());
 		//this.imageLoader.displayImage(prod.get(position).getImageResource(), imageView);
 		//txtPreco.setText("R$ " + prod.get(position).getPreco());
 		return rowView;

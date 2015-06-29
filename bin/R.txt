@@ -248,13 +248,14 @@ int id action_context_bar 0x7f09001d
 int id action_menu_divider 0x7f090002
 int id action_menu_presenter 0x7f090003
 int id action_mode_close_button 0x7f090024
-int id action_settings 0x7f090050
+int id action_settings 0x7f090053
 int id activity_chooser_view_content 0x7f090025
 int id always 0x7f09000f
 int id beginning 0x7f090016
 int id btnStart 0x7f09003f
 int id checkbox 0x7f09002d
 int id collapseActionView 0x7f090010
+int id datas 0x7f090051
 int id default_activity_button 0x7f090028
 int id dialog 0x7f090014
 int id disableHome 0x7f090009
@@ -276,8 +277,10 @@ int id list_item 0x7f090029
 int id middle 0x7f090018
 int id never 0x7f090012
 int id nome 0x7f09003c
+int id nomes 0x7f090050
 int id none 0x7f090019
 int id normal 0x7f090007
+int id notas 0x7f090052
 int id preco 0x7f09003d
 int id progress_circular 0x7f090004
 int id progress_horizontal 0x7f090005
@@ -347,7 +350,8 @@ int layout activity_lista_resultados 0x7f030019
 int layout activity_main 0x7f03001a
 int layout activity_perguntas 0x7f03001b
 int layout activity_result 0x7f03001c
-int layout support_simple_spinner_dropdown_item 0x7f03001d
+int layout list_item 0x7f03001d
+int layout support_simple_spinner_dropdown_item 0x7f03001e
 int menu list_cell 0x7f0c0000
 int menu lista_resultados 0x7f0c0001
 int menu main 0x7f0c0002

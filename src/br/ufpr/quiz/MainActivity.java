@@ -25,6 +25,7 @@ public class MainActivity extends Activity implements OnClickListener {
     		Boolean status = bundle.getBoolean("status");
     		bundle.putInt("position", -1);
     		bundle.putInt("pontuacao", 0);
+    		bundle.putString("nome", nome.getText().toString());
     		if(status){
     			Intent it = new Intent(MainActivity.this, PerguntasActivity.class);
     			it.putExtras(bundle);
